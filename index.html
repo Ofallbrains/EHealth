@@ -13,7 +13,7 @@
 <body>
     <div>
 
-        <div class="flex justify-between p-4 bg-white">
+        <div class="flex justify-between p-4 bg-white w-full fixed top-0 z-10">
             <h1 class="text-4xl ml-20 font-bold text-green-500">EHealth</h1>
             <nav class="flex gap-8 mt-2">
                 <a href="#" class="text-green-500 text-xl ml-20">Home</a>
@@ -27,91 +27,126 @@
             </div>
         </div>
 
-            <header class="bg-blue-200 p-20 relative">
-                <div class="flex">
-            
-                    <div class="mt-16">
-                        <h1 class="text-4xl font-bold ml-20 ">We are here committed to your <br> <span class="text-green-500">Best Health</span></h1>
-                        <p class="mt-10 font-medium ml-20 ">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                            <br>Provident officiis earum aut consequatur error?
-                            Ea doloribus placeat repudiandae.</p>
+        <header class="bg-blue-200 p-20 relative">
+            <div class="flex">
+
+                <div class="mt-16">
+                    <h1 class="text-4xl font-bold ml-20 ">We are here committed to your <br> <span
+                            class="text-green-500">Best Health</span></h1>
+                    <p class="mt-10 font-medium ml-20 ">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                        <br>Provident officiis earum aut consequatur error?
+                        Ea doloribus placeat repudiandae.
+                    </p>
+                </div>
+                <div class="ml-auto">
+                    <img src="images/doctor.png" width="600" height="700">
+                </div>
+        </header>
+
+        <div class="absolute bottom-14 left-40 ">
+            <div class="flex gap-x-10">
+                <div class="border-4 border-transparent p-6 bg-gray-300">
+                    <div class="flex gap-5">
+                        <i class="fa-solid fa-phone"></i>
+                        <p>Give Us a Call</p>
                     </div>
-                    <div class="ml-auto">
-                        <img src="images/doctor.png" width="600" height="700">
+                    <p class="ml-8">1-888-123-4567</p>
+                </div>
+                <div class="border-4 border-transparent bg-blue-500 p-4">
+                    <div class="flex gap-5">
+                        <i class="fa-solid fa-envelope"></i>
+                        <p>Sends Us A message</p>
                     </div>
-                </header>
-                   
-                    <div class="absolute bottom-0 left-40 ">
-                        <div class="flex gap-x-10">
-                            <div class="border-4 border-transparent p-6 bg-gray-300">
-                                <div class="flex gap-5">
-                                    <i class="fa-solid fa-phone"></i>
-                                    <p>Give Us a Call</p>
-                                </div>
-                                <p class="ml-8">1-888-123-4567</p>
-                            </div>
-                            <div class="border-4 border-transparent bg-blue-500 p-4">
-                                <div class="flex gap-5">
-                                    <i class="fa-solid fa-envelope"></i>
-                                    <p>Sends Us A message</p>
-                                </div>
-                                <p class="ml-8">info@gmail.com</p>
-                            </div>
-                            <div class="border-4 border-transparent bg-gray-300 p-4">
-                                <div class="flex gap-5">
-                                    <i class="fa-solid fa-location-dot"></i>
-                                    <p>Visit Our Location</p>
-                                </div>
-                                <p class="ml-8">KG 166st</p>
-                            </div>
+                    <p class="ml-8">info@gmail.com</p>
+                </div>
+                <div class="border-4 border-transparent bg-gray-300 p-4">
+                    <div class="flex gap-5">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>Visit Our Location</p>
+                    </div>
+                    <p class="ml-8">KG 166st</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main class="bg-white p-4 mt-28">
+        <div class="flex gap-40">
+            <div class="relative">
+                <div>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToqD-CzbOJtIi-Jcx9gd-RGQQFlL8v_2NsMw&usqp=CAU"
+                        class="w-[100%] h-[450px]">
+                </div>
+                <div class="absolute top-40 left-60">
+                    <img src="https://i.pinimg.com/736x/b9/97/a5/b997a530822d0f2c03259070d4590d45.jpg"
+                        class="w-[120%] h-[450px]">
+                </div>
+            </div>
+
+            <div>
+                <h2 class="text-2xl font-normal mt-20">ABOUT US</h2>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="bg-gray-300 mt-60 p-4 m-auto">
+        <div class="flex gap-20">
+            <div class="bg-white p-12 w-[50%]">
+                <h2 class="text-3xl font-bold text-center">Make An <span class="text-green-500">Appointment</span></h2>
+                <div class="flex gap-40">
+                    <form action="">
+                        <input type="text" placeholder="Your Name"
+                            class="border-2 bg-gray-100 border-transparent p-2 mt-4 w-[180%]"><br>
+                        <input type="text" placeholder="Your Email"
+                            class="border-2 bg-gray-100 border-transparent p-2 mt-4 w-[180%]"><br>
+                        <input type="text" placeholder="Your Phone"
+                            class="border-2 bg-gray-100 border-transparent  p-2 mt-4 w-[180%]">
+                    </form>
+                    <form>
+                        <textarea placeholder="Your Message"
+                            class="border-2 p-14 bg-gray-100 border-transparent mt-4 w-[100%] placeholder-top"></textarea>
+                        <button class="bg-green-500 text-white p-2 rounded-2xl mt-4 w-[75%]">Make an
+                            Appointment</button>
+                    </form>
+                </div>
+            </div>
+            <div>
+                <p><span class="text-green-500">EHEALTH </span>INFO</p>
+                <h2 class="mt-4 text-2xl mb-4">Contact <span class="text-green-500">EHealth</span></h2>
+                <p>Lorem ipsum dolor sit amet consectetur <br> adipisicing elit.
+                    Reiciendis itaque expedita <br>quaerat quia etandenz lroem
+                </p>
+                <div class="flex gap-10 mt-8">
+                    <div>
+                        <div class="flex gap-4">
+                            <i class="fa-solid fa-phone text-green-500 text-lg"></i>
+                            <p class="text-lg font-bold">Phone</p>
                         </div>
+                        <p class="ml-8">+250-7888-968-847</p>
+                        <p class="ml-8">+250-7839-968-697</p>
+                    </div>
+                    <div>
+                        <div class="flex gap-4">
+                            <i class="fa-solid fa-envelope text-green-500 text-lg"></i>
+                            <p class="text-lg font-bold">Email</p>
+                        </div>
+                        <p class="ml-8">info@gmail.com</p>
+                        <p class="ml-8">ruhumjustin@gmail.com</p>
                     </div>
                 </div>
-            
-        <main class="bg-white p-4 mt-20">
-            <div>
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZtzHo5Gr9CP84e9TZrvIXRJRFrp5qHDIb3A&usqp=CAU" alt="">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_vfl6zFkigBi99_HZoNIV2rGjZS1Qyu8oNQ&usqp=CAU" alt="">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToqD-CzbOJtIi-Jcx9gd-RGQQFlL8v_2NsMw&usqp=CAU" alt="">
-            </div>
-            <div>
-                <h2>About Us</h2>
-            </div>
-        </main>
-
-        <footer class="bg-gray-300 p-4">
-            <div>
-                <h2>Make An Appointment</h2>
-                <form action="">
-                    <input type="text" placeholder="Your Name"><br>
-                    <input type="text" placeholder="Your Email"><br>
-                    <input type="text" placeholder="Your Phone">
-                    <input type="text" placeholder="Your Message">
-                    <input type="text" placeholder="Submit">
-                </form>
-            </div>
-            <div>
-                <h2>Contact EHealth</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                 Repellat, mollitia!</p>
-                 <div>
-                    <i class="fa-solid fa-phone"></i>
-                    <p>Give Us a Call</p>
-                    <p>1-888-123-4567</p>
-                </div>
-                <div>
-                    <i class="fa-solid fa-envelope"></i>
-                    <p>Sends Us A message</p>
-                    <p>info@gmail.com</p>
-                </div>
-                <div>
-                    <i class="fa-solid fa-location-dot"></i>
-                    <p>Visit Our Location</p>
-                    <p>KG 166st</p>
+                <div class="mt-8">
+                    <div class="flex gap-4">
+                        <i class="fa-solid fa-location-dot text-green-500 text-lg"></i>
+                        <p class="text-lg font-bold">Address Information</p>
+                    </div>
+                    <p class="ml-8">EHealth Location KG 156, street</p>
                 </div>
             </div>
 
-        </footer>
+        </div>
+
+    </footer>
 
     </div>
 </body>
