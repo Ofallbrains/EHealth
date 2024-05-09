@@ -14,16 +14,16 @@
     <div>
 
         <div class="flex justify-between p-4 bg-white w-full fixed top-0 z-10">
-            <h1 class="text-4xl ml-20 font-bold text-green-500">EHealth</h1>
+            <a href="" class="text-3xl font-bold text-green-500">EHealth</a>
             <nav class="flex gap-8 mt-2">
-                <a href="#" class="text-green-500 text-xl ml-20">Home</a>
-                <a href="#" class="text-xl">About Us</a>
-                <a href="#" class="text-xl">Find A Doctor</a>
-                <a href="#" class="text-xl">Contact Us</a>
+                <a href="" class="text-green-500 text-xl ml-20 font-bold">Home</a>
+                <a href="#About" class="text-xl font-bold">About Us</a>
+                <a href="#" class="text-xl font-bold">Find A Doctor</a>
+                <a href="#Contact" class="text-xl font-bold">Contact Us</a>
             </nav>
-            <div class="flex gap-10 mt-2">
-                <a href="" class="text-xl ">Login</a>
-                <a href="" class="border-2 border-transparent bg-green-500 mr-8 text-white">SignIn</a>
+            <div class="flex gap-8 mt-2">
+                <a href="Components/Login.html" class="text-xl font-medium">Login</a>
+                <a href="Components/Sign Up.html" class="border-2 p-[2px] font-medium text-center rounded-2xl w-[80px] border-transparent bg-green-500 mr-8 text-white">Sign Up</a>
             </div>
         </div>
 
@@ -70,8 +70,8 @@
         </div>
     </div>
 
-    <main class="bg-white p-4 mt-28">
-        <div class="flex gap-40">
+    <main id="About" class="bg-white p-2 mt-28">
+        <div class="flex gap-28">
             <div class="relative">
                 <div>
                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToqD-CzbOJtIi-Jcx9gd-RGQQFlL8v_2NsMw&usqp=CAU"
@@ -83,15 +83,19 @@
                 </div>
             </div>
 
-            <div>
-                <h2 class="text-2xl font-normal mt-20">ABOUT US</h2>
+            <div >
+            <h2 class="text-2xl font-normal mt-14">ABOUT US</h2>
+                <p class="mt-6 w-[500px] font-medium text-justify text-xl">We provide accessible and comprehensive healthcare solutions to individuals worldwide. We also envision  a world  where healthcare is easily accessible to everyone, 
+                    Founded on the principles of compassion and innovation, Ehealth is a leading online health service provider. At EHealth, we connect patients. With qualified healthcare professionals, making it easier for individuals to find the care they need.With a user-friendly platform and a vast network...
+                </p>
+                <button onclick="location.href='Components/About.html';" class="bg-green-600 text-white p-2 w-[25%] rounded-3xl mt-6">Read more</button>
             </div>
         </div>
 
     </main>
 
     <footer class="bg-gray-300 mt-60 p-4 m-auto">
-        <div class="flex gap-20">
+        <div id="Contact" class="flex gap-20">
             <div class="bg-white p-12 w-[50%]">
                 <h2 class="text-3xl font-bold text-center">Make An <span class="text-green-500">Appointment</span></h2>
                 <div class="flex gap-40">
