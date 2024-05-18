@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,6 +6,42 @@
     <script src="https://kit.fontawesome.com/b709f895a1.js" crossorigin="anonymous"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <title>LoginPage</title>
+    <style>
+        .error-message {
+            color: red;
+            font-size: 0.8rem;
+            margin-top: 0.25rem;
+        }
+    </style>
+    <script>
+        function validateLoginForm() {
+            var email = document.getElementById("email").value;
+            var password = document.getElementById("password").value;
+            var isValid = true;
+
+            // Clear previous error messages
+            document.getElementById("email-error").innerText = "";
+            document.getElementById("password-error").innerText = "";
+
+            // Basic validation for email and password
+            if (email === "" || !validateEmail(email)) {
+                document.getElementById("email-error").innerText = "Please enter a valid email address.";
+                isValid = false;
+            }
+            if (password === "") {
+                document.getElementById("password-error").innerText = "Please enter a password.";
+                isValid = false;
+            }
+            
+            return isValid;
+        }
+
+        // Function to validate email format
+        function validateEmail(email) {
+            var re = /\S+@\S+\.\S+/;
+            return re.test(email);
+        }
+    </script>
 </head>
 <body>
     <div class="bg-gradient-to-r from-gray-400 to-indigo-300 p-10 w-[50%] m-auto mt-[100px]">
@@ -15,12 +51,14 @@
         <div class="flex flex-col gap-10 items-center p-6">
             <div class="flex gap-4 border-2 w-[60%] p-2 rounded-md bg-blue-100 border-transparent">
                 <i class="fa-solid fa-envelope text-green-500 text-xl"></i>
-                <input type="text" placeholder="Email Id" class="border-transparent bg-transparent placeholder-black font-bold">
+                <input type="text" id="email" placeholder="Email Id" class="border-transparent bg-transparent placeholder-black font-bold">
             </div>
-            <div class="flex gap-4 border-2 w-[60%] p-2 rounded-md bg-blue-100 border-transparent">
+            <span id="email-error" class="error-message "></span>
+            <div class="flex gap-4 border-2 w-[60%] p-2 rounded-md bg-blue-100 border-transparent ">
                 <i class="fa-solid fa-lock text-green-500 text-xl"></i>
-                <input type="text" placeholder="Password" class="border-transparent bg-transparent placeholder-black font-bold">
+                <input type="password" id="password" placeholder="Password" class="border-transparent bg-transparent placeholder-black font-bold">
             </div>
+            <span id="password-error" class="error-message"></span>
         </div>
 
         <div class="flex justify-center gap-2 ">
@@ -29,10 +67,60 @@
         </div>
     
         <div class="flex justify-center gap-4 mt-8">
+            <button onclick="if(validateLoginForm()) alert('Login Successful');" class="bg-blue-800 text-white p-2 w-[25%] rounded-3xl">Login</button>
             <button onclick="location.href='Sign Up.html';" class="bg-white  p-2 w-[25%] rounded-3xl">SignUp</button>
-            <button class="bg-blue-800 text-white p-2 w-[25%] rounded-3xl">Login</button>
         </div>
     </div>
 
 </body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/b709f895a1.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Login</title>
+</head>
+
+<body class="flex justify-center items-center h-screen bg-blue-300">
+    <div class="bg-gradient-to-r from-gray-400 to-indigo-300 p-8 rounded-lg shadow-md w-96">
+        <h2 class="text-2xl font-bold mt-2 text-green-600 text-center">Login</h2>
+        <form id="login-form">
+            <div class="mt-4">
+                <label for="username" class="text-lg font-medium">Username</label>
+                <input type="text" id="username" class="border border-gray-300 rounded-lg p-2 w-full" required>
+            </div>
+            <div class="mt-4">
+                <label for="password" class="text-lg font-medium">Password</label>
+                <input type="password" id="password" class="border border-gray-300 rounded-lg p-2 w-full" required>
+            </div>
+            <button type="submit" class="mt-8 bg-green-500 text-white p-2 rounded-2xl w-full">Login</button>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById('login-form').addEventListener('submit', function (e) {
+            e.preventDefault();
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+
+            const users = JSON.parse(localStorage.getItem('users')) || [];
+            const user = users.find(user => user.username === username && user.password === password);
+
+            if (user) {
+                alert('Login successful!');
+                localStorage.setItem('loggedInUser', JSON.stringify(user));
+                window.location.href = '../index.html';
+            } else {
+                alert('Invalid username or password');
+            }
+        });
+    </script>
+</body>
+
 </html>
