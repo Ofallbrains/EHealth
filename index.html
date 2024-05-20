@@ -8,6 +8,8 @@
     <script src="https://kit.fontawesome.com/b709f895a1.js" crossorigin="anonymous"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <title>EHealth</title>
+
+   
 </head>
 
 <body>
@@ -18,7 +20,7 @@
             <nav class="flex gap-8 mt-2">
                 <a href="" class="nav-link text-green-500 text-xl ml-20 font-bold" onclick="setActive(this)">Home</a>
                 <a href="#About" class="nav-link text-xl font-bold" onclick="setActive(this)">About Us</a>
-                <a href="#" class="nav-link text-xl font-bold" onclick="setActive(this)">Find A Doctor</a>
+                <a href="#Find" class="nav-link text-xl font-bold" onclick="setActive(this)">Find A Doctor</a>
                 <a href="#Contact" class="nav-link text-xl font-bold" onclick="setActive(this)">Contact Us</a>
             </nav>
             <div class="flex gap-8 mt-2">
@@ -102,88 +104,92 @@
 
     </main>
 
-    <div class="gap-10 m-auto mt-60">
+
+    <div id="Find" class="gap-10 m-auto mt-60">
         <h2 class="text-3xl font-bold text-green-500 text-center">BETTER DOCTORS. BETTER CARE</h2>
         <p class="text-center text-xl font-medium">Find our experts!</p>
     </div>
 
     <div class="flex gap-14 p-20 w-full flex-wrap">
+
         <div class="w-[30%]">
             <img src="https://img.freepik.com/free-photo/beautiful-young-female-doctor-looking-camera-office_1301-7807.jpg"
                 alt="" class="w-full h-[400px]">
-            <p>Uwineza Raisa</p>
-            <span>Dermatologist</span>
+            <p class="text-2xl font-bold mt-4 text-center">Uwineza Raisa</p>
+            <p class="text-green-500 font-medium text-center">Dermatologist</p>
+            <button onclick="location.href='Components/Dr1.html';" class="bg-green-800 text-white ml-32 mt-4 p-2 w-[30%] hover:bg-green-600 rounded-3xl">View Profile</button>
         </div>
+
         <div class="w-[30%] ">
             <img src="https://i.pinimg.com/originals/50/ed/1b/50ed1b7ee539494c83e54bef309abfba.jpg" alt=""
                 class="w-full h-[400px]">
-            <p>Kalisa Emma</p>
-            <span>Niertherapist</span>
+            <p class="text-2xl font-bold text-center mt-4">Kalisa Emma</p>
+            <p class="text-green-500 font-medium text-center">Niertherapist</p>
+            <button class="bg-green-800 text-white ml-32 mt-4 p-2 w-[30%] hover:bg-green-600 rounded-3xl">View Profile</button>
         </div>
+
         <div class="w-[30%]">
             <img src="https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTA5L3Jhd3BpeGVsb2ZmaWNlMl9waG90b19vZl9hX2JsYWNrX3BsdXNfc2l6ZV9mZW1hbGVfZG9jdG9yX2luX2hvc19mOGU4MTBlMi1kOWEyLTQ5OTMtOWM0Zi1kNWI2OTQ5ODVmZTNfMi5qcGc.jpg"
                 alt="" class="w-full h-[400px]">
-            <p>Annah Montez</p>
-            <span>Otolaryngology</span>
+            <p class="text-2xl font-bold mt-4 text-center">Annah Montez</p>
+            <p class="text-green-500 font-medium text-center">Otolaryngology</p>
+            <button class="bg-green-800 text-white ml-32 mt-4 p-2 w-[30%] hover:bg-green-600 rounded-3xl">View Profile</button>
         </div>
         <div class="w-[30%]">
             <img src="https://t4.ftcdn.net/jpg/02/60/04/09/360_F_260040900_oO6YW1sHTnKxby4GcjCvtypUCWjnQRg5.jpg" alt=""
                 class="w-full h-[400px]">
-            <p>James Wanjiku</p>
-            <span>Cardiology</span>
+            <p class="text-2xl font-bold mt-4 text-center">James Wanjiku</p>
+            <p class="text-green-500 font-medium text-center">Cardiology</p>
+            <button class="bg-green-800 text-white ml-32 mt-4 p-2 w-[30%] hover:bg-green-600 rounded-3xl">View Profile</button>
         </div>
         <div class="w-[30%]">
             <img src="https://media.istockphoto.com/id/1203995945/photo/portrait-of-mature-male-doctor-wearing-white-coat-standing-in-hospital-corridor.jpg?s=612x612&w=0&k=20&c=Hk-dqLqHXyYa4aTqjieXNk9-HQSE8WEYUAjA1sXsy_s="
                 alt="" class="w-full h-[400px]">
-            <p>Davis Ben</p>
-            <span>Neurosurgery</span>
+            <p class="text-2xl font-bold text-center mt-4">Davis Ben</p>
+            <p class="text-green-500 font-medium text-center">Neurosurgery</p>
+            <button class="bg-green-800 text-white ml-32 mt-4 p-2 w-[30%] hover:bg-green-600 rounded-3xl">View Profile</button>
         </div>
+
         <div class="w-[30%] ">
             <img src="https://www.shutterstock.com/image-photo/beautiful-african-american-nurse-arms-600nw-1936087690.jpg"
                 alt="" class="w-full h-[400px]">
-            <p>Mary Monique</p>
-            <span>Dermatologist</span>
+            <p class="text-2xl font-bold text-center mt-4">Mary Monique</p>
+            <p class="text-green-500 font-medium text-center">Dermatologist</p>
+            <button class="bg-green-800 text-white ml-32 mt-4 p-2 w-[30%] hover:bg-green-600 rounded-3xl">View Profile</button>
         </div>
+
         <div class="w-[30%]">
             <img src="https://suncoastorthopaedic.com/wp-content/uploads/2019/01/osteopathic-doctor.jpg" alt=""
                 class="w-full h-[400px]">
-            <p>Uwem Akpan</p>
-            <span>Otolaryngology</span>
+            <p class="text-center text-2xl font-bold mt-6 ">Uwem Akpan</p>
+            <p class="text-center text-green-500 font-medium">Otolaryngology</p>
+            <button class="bg-green-800 text-white ml-32 mt-4 p-2 w-[30%] hover:bg-green-600 rounded-3xl">View Profile</button>
         </div>
+
         <div class="w-[30%] ">
             <img src="https://i.pinimg.com/736x/00/f8/83/00f8836cfdefd92923dad8c4614ee4b1.jpg" alt=""
                 class="w-full h-[400px]">
-            <p>Uche Emeka</p>
-            <span>Otolaryngology</span>
+            <p class="text-center text-2xl font-bold mt-6">Uche Emeka</p>
+            <p class="text-center text-green-500 font-medium">Otolaryngology</p>
+            <button class="bg-green-800 text-white ml-32 mt-4 p-2 w-[30%] hover:bg-green-600 rounded-3xl">View Profile</button>
         </div>
-        <div class="w-[30%] ">
 
+        <div class="w-[30%] ">
             <img src="https://st3.depositphotos.com/1158045/12715/i/950/depositphotos_127153148-stock-photo-african-doctor-in-hospital.jpg"
                 alt="" class="w-full h-[400px]">
-            <p>Michael Joseph</p>
-            <span>Neurosurgery/span>
+            <p class="text-center text-2xl font-bold mt-6">Michael Joseph</p>
+            <p class="text-center text-green-500 font-medium">Neurosurgery</p>
+            <button class="bg-green-800 text-white ml-32 mt-4 p-2 w-[30%] hover:bg-green-600 rounded-3xl">View Profile</button>
         </div>
     </div>
+   
 
-    <footer class="bg-gray-300 mt-60 p-4 m-auto">
+    <footer class="bg-gray-300 mt-20 p-4 m-auto">
         <div id="Contact" class="flex gap-20">
             <div class="bg-white p-12 w-[50%]">
                 <h2 class="text-3xl font-bold text-center">Make An <span class="text-green-500">Appointment</span></h2>
                 <div class="flex gap-40">
-                    <!-- <form action="">
-                        <input type="text" placeholder="Your Name"
-                            class="border-2 bg-gray-100 border-transparent p-2 mt-4 w-[180%]"><br>
-                        <input type="text" placeholder="Your Email"
-                            class="border-2 bg-gray-100 border-transparent p-2 mt-4 w-[180%]"><br>
-                        <input type="text" placeholder="Your Phone"
-                            class="border-2 bg-gray-100 border-transparent  p-2 mt-4 w-[180%]">
-                    </form>
-                    <form>
-                        <textarea placeholder="Your Message"
-                            class="border-2 p-14 bg-gray-100 border-transparent mt-4 w-[100%] placeholder-top"></textarea>
-                        <button class="bg-green-500 text-white p-2 rounded-2xl mt-4 w-[75%]">Make an
-                            Appointment</button>
-                    </form> -->
+                    
                     <form id="appointment-form">
                         <input type="text" id="userName" placeholder="Your Name"
                             class="border-2 bg-gray-100 border-transparent p-2 mt-4 w-[180%]" readonly><br>
@@ -243,6 +249,7 @@
     </div>
 
     <script>
+        
         document.getElementById('appointment-form').addEventListener('submit', function (e) {
             e.preventDefault();
 
@@ -268,14 +275,13 @@
                 message
             };
 
-            // Simulate form submission delay
             setTimeout(() => {
-                console.log('Appointment Data:', appointmentData); // Replace with actual submission logic
+                console.log('Appointment Data:', appointmentData); 
                 alert('Appointment request submitted successfully!');
                 appointmentButton.disabled = false;
                 spinner.classList.add('hidden');
                 document.getElementById('appointment-form').reset();
-            }, 2000); // Simulating a delay of 2 seconds
+            }, 2000); 
         });
     </script>
 
