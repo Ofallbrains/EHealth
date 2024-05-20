@@ -99,26 +99,41 @@
                 <label for="password" class="text-lg font-medium">Password</label>
                 <input type="password" id="password" class="border border-gray-300 rounded-lg p-2 w-full" required>
             </div>
-            <button type="submit" class="mt-8 bg-green-500 text-white p-2 rounded-2xl w-full">Login</button>
+            <button type="submit" class="mt-8 bg-green-500 text-white p-2 rounded-2xl w-full" id="loginButton">
+                Login
+                <span id="spinner" class="hidden"><i class="fa fa-spinner fa-spin"></i></span>
+            </button>
         </form>
     </div>
 
     <script>
         document.getElementById('login-form').addEventListener('submit', function (e) {
             e.preventDefault();
+
+            const loginButton = document.getElementById('loginButton');
+            const spinner = document.getElementById('spinner');
+
+            loginButton.disabled = true;
+            spinner.classList.remove('hidden');
+
             const username = document.getElementById('username').value;
             const password = document.getElementById('password').value;
 
             const users = JSON.parse(localStorage.getItem('users')) || [];
             const user = users.find(user => user.username === username && user.password === password);
 
-            if (user) {
-                alert('Login successful!');
-                localStorage.setItem('loggedInUser', JSON.stringify(user));
-                window.location.href = '../index.html';
-            } else {
-                alert('Invalid username or password');
-            }
+            // Simulate login delay
+            setTimeout(() => {
+                if (user) {
+                    localStorage.setItem('loggedInUser', JSON.stringify(user));
+                    window.location.href = '../index.html'; // Corrected path to the root directory
+                } else {
+                    alert('Invalid username or password');
+                }
+
+                loginButton.disabled = false;
+                spinner.classList.add('hidden');
+            }, 2000); // Simulating a delay of 2 seconds
         });
     </script>
 </body>
